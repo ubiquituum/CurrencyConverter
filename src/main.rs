@@ -1,4 +1,5 @@
-const CURRENCIES: Currencies = Currencies{
+const CURRENCIES: Currencies = Currencies
+{
     USD: CurrencyInfo 
     {
         ratio: 1.0,
@@ -67,6 +68,5 @@ impl CurrencyCount
 
 fn main() 
 {
-    CURRENCIES.INR.count(1.0).print().convert(&CURRENCIES.ILS).print();
-    CURRENCIES.USD.count(1.0).print().convert(&CURRENCIES.INR).print();
+    CURRENCIES.USD.count(1.0).print().convert(&CURRENCIES.ILS).print();
 }
